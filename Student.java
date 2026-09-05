@@ -10,4 +10,7 @@ public class Student {
     public void display() {
         System.out.println("MAIN: " + id + " - " + name);
     }
+	public boolean hasName(String keyword) {
+    return name.contains(keyword);
+}
 }
