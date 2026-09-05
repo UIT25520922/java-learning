@@ -8,6 +8,6 @@ public class Student {
     }
 
     public void display() {
-        System.out.println(id + " - " + name);
+        System.out.println("MAIN: " + id + " - " + name);
     }
 }
