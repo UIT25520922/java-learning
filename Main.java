@@ -1,6 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Student student = new Student(1, "Chi");
-        student.display();
+
+        Box<Integer> numberBox = new Box<>(10);
+        Box<String> stringBox = new Box<>("Java");
+
+        System.out.println(numberBox.getValue());
+        System.out.println(stringBox.getValue());
     }
 }
