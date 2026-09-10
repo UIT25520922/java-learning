@@ -1,16 +1,12 @@
-public class Student {
-    private int id;
-    private String name;
+public Student(int id, String name, double gpa) {
 
-    public Student(int id, String name) {
-        this.id = id;
-        this.name = name;
+    if (gpa < 0 || gpa > 10) {
+        throw new InvalidGpaException(
+                "GPA must be between 0 and 10"
+        );
     }
 
-    public void display() {
-        System.out.println("MAIN: " + id + " - " + name);
-    }
-	public boolean hasName(String keyword) {
-    return name.contains(keyword);
-}
+    this.id = id;
+    this.name = name;
+    this.gpa = gpa;
 }

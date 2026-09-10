@@ -1,10 +1,12 @@
 public class Main {
     public static void main(String[] args) {
 
-        Box<Integer> numberBox = new Box<>(10);
-        Box<String> stringBox = new Box<>("Java");
+        try {
+            Student student =
+                    new Student(1, "An", 15);
 
-        System.out.println(numberBox.getValue());
-        System.out.println(stringBox.getValue());
+        } catch (InvalidGpaException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
